@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --foreground-rgb: 16, 25, 40, 1;
+}
+
+* {
+    border-color: #D0D5DD;
+  }
+  
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background-color: #F9FAFB;
+    font-weight: 500;
+    @apply text-lg;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    letter-spacing: -1.2px;
+    line-height: 120%;
+  }
+
+
+  .gradient-text {
+    background: linear-gradient(to right, #3c2a99, #db2d1b); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent; /* Fallback for older browsers */
+  }
+
+
+  .social{
+     .before{
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      top: -10px;
+      left: 21px;
+      transform: translateY(-100%);
+      background-color: #d0d3d8;
+
+    }
+     a{
+      height: 42px;
+      width: 42px;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: linear-gradient(to right, #3c2a99, #db2d1b);
+      
+      img,svg{
+        height: 20px;
+        width: 20px;
+      }
+     }
+  }
+
+
+  .hero-2-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
