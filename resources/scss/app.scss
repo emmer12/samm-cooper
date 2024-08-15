@@ -10,11 +10,12 @@
 * {
     border-color: #D0D5DD;
   }
-  
+
+
 
   body {
-    color: rgb(var(--foreground-rgb));
-    background-color: #F9FAFB;
+    color: #262121;
+    background-color:#fff; //#F9FAFB;
     font-weight: 500;
     @apply text-lg;
   }
@@ -37,7 +38,17 @@
     color: transparent; /* Fallback for older browsers */
   }
 
+  p{
+    margin: 16px 0px;
+  }
 
+  .banner{
+    @apply bg-gradient-to-r from-[#db2d1b] to-[#3c2a99] text-white text-[14px] font-semibold py-2 px-4 ;
+  }
+
+  .container-x {
+    @apply container mx-auto px-6 sm:px-8
+}
   .social{
      .before{
       height: 100%;
@@ -71,4 +82,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .box-mb{
+    display: flex;
+    gap:12px;
+
+    h4{
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .box-image{
+    height: 72px;
+    width: 72px;
+    background: linear-gradient(to right, #3c2a99, #db2d1b);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-image svg{
+    fill:#fff;
+    height: 28px;
+    width: 28px;
   }

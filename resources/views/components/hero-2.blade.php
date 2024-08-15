@@ -5,8 +5,7 @@
             : 'inline-flex items-center px-1 pt-1  border-transparent text-ls font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out';
 @endphp
 
-<div class="h-screen hero-2-bg"
-    style=" background-image: linear-gradient(to right, #d1d1d4d4, #ffd4d4), url('{{ asset('images/img1.jpeg') }}');">
+<div class="h-screen hero-2-bg">
     <div class="max-w-7xl m-auto">
         <div class="flex pt-[200px]">
             <div class="w-1/2 m-auto">
@@ -71,26 +70,17 @@
             selector: ".anim4",
             y: 20
         },
-        {
-            selector: ".anim5",
-            rotateY: 90
-        },
+
         {
             selector: ".anim6",
             y: 20
         },
-        {
-            selector: ".anim7",
-            rotateY: 90
-        },
+
         {
             selector: ".anim8",
             y: 20
         },
-        {
-            selector: ".anim9",
-            y: 20
-        }
+
     ];
 
     const tl = gsap.timeline();
@@ -103,9 +93,6 @@
             opacity: 0,
         })
     });
-    tl.to(".anim-h", {
-        height: 'auto',
-    })
 
     tl.from(".social .before", {
         opacity: 0,

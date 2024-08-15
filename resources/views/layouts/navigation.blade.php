@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="fixed h-[70px] w-full top-0 z-50 bg-slate-50 bg-opacity-5  ">
+<nav x-data="{ open: false }" class="fixed h-[70px] w-full top-0 z-50 bg-slate-50 bg-opacity-85  ">
     {{-- border-gray-100  --}}
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
@@ -12,18 +12,18 @@
 
                 <ul class="flex item-center gap-5">
                     <li>
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('home')">
+                        <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
                             {{ __('Home') }}
                         </x-nav-link>
                     </li>
                     <li>
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                             {{ __('About Us') }}
                         </x-nav-link>
                     </li>
 
                     <li>
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        <x-nav-link :href="route('services')" :active="request()->routeIs('services')">
                             {{ __('Our services') }}
                         </x-nav-link>
                     </li>
@@ -35,7 +35,7 @@
                         </x-nav-link>
                     </li> --}}
                     <li>
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
                             {{ __('Contact us') }}
                         </x-nav-link>
                     </li>
