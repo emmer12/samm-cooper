@@ -30,12 +30,12 @@
                         </div>
                         <div class="box-content">
                             <h4>Location:</h4>
-                            <span class="text-size-16">121 King Street, <br />Melbourne Victoria <br> 3000
-                                Australia</span>
+                            <span class="text-size-16"> #60 Kwame Nkrumah Crescent, <br /> Asokoro District,<br> Abuja
+                                F.C.T.</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-4">
+                <div class="">
                     <div class="bg-white p-4 box-mb">
                         <div class="box-image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -46,15 +46,16 @@
                         </div>
                         <div class="box-content">
                             <h4 class="heading">Phone:</h4>
-                            <span><a href="tel:+61383766284" class="text-decoration-none text text-size-16">(+61 3 8376
-                                    6284)</a></span><br>
-                            <span><a href="tel:+80023456789" class="mb-0 text-decoration-none text text-size-16">(+800
-                                    2345
-                                    6789)</a></span>
+                            <span><a href="tel:+23492902686 " class="text-decoration-none text text-size-16">+234 929
+                                    02686</span><br>
+                            <span><a href="tel:+2347064386315" class="mb-0 text-decoration-none text text-size-16">+234
+                                    706 4386315</a></span><br>
+                            <span><a href="tel:+2348037450060" class="mb-0 text-decoration-none text text-size-16">+234
+                                    803 7450060</a></span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-4">
+                <div class="">
                     <div class="bg-white p-4 box-mb">
                         <div class="box-image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -67,15 +68,59 @@
                         </div>
                         <div class="box-content">
                             <h4 class="heading">Email:</h4>
-                            <span><a href="mailto:info@fortified.com"
-                                    class="text-decoration-none text-size-16">info@fortified.com</a></span><br>
-                            <span><a href="mailto:fortified@gmail.com"
-                                    class="mb-0 text-decoration-none text-size-16">fortified@gmail.com</a></span>
+                            <span><a href="mailto:info@sammcooperng.com"
+                                    class="text-decoration-none text-size-16">info@sammcooperng.com </a></span><br>
+                            {{-- <span><a href="mailto:fortified@gmail.com"
+                                    class="mb-0 text-decoration-none text-size-16">fortified@gmail.com</a></span> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="py-[100px]">
+        <div class="container-x">
+            <header class="m-auto text-center mb-5">
+                <h2 class="text-[36px] font-bold">Get in touch</h2>
+            </header>
+
+
+            <div class="max-w-[640px] m-auto">
+                <form>
+                    <div class="grid gap-6 mb-6 md:grid-cols-1">
+
+                        <div>
+                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">First
+                                name</label>
+                            <input type="text" id="first_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="John" required />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
+                            <input type="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="john.doe@company.com" required />
+                        </div>
+                        <div>
+                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">
+                                Company</label>
+                            <input type="text" id="company"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Flowbite" required />
+                        </div>
+
+
+
+                        <x-primary-button>Submit</x-primary-button>
+
+                </form>
+            </div>
+
+        </div>
+
     </section>
 
 

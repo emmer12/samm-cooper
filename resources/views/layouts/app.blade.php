@@ -33,6 +33,9 @@
         <main>
             {{ $slot }}
         </main>
+        @if (request()->route()->getName() != 'home')
+            <x-footer></x-footer>
+        @endif
     </div>
 
 
@@ -45,10 +48,36 @@
             gsap.from(section, {
                 scrollTrigger: {
                     trigger: section,
-                    start: "top center",
+                    start: "top bottom",
                 },
                 delay: i * 0.5,
                 autoAlpha: 0
+            });
+        });
+
+        gsap.utils.toArray(".slideIn").forEach((section, i) => {
+            gsap.from(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "center bottom",
+                },
+                y: 100,
+                autoAlpha: 0
+
+            });
+        });
+
+
+
+
+        gsap.utils.toArray(".image-slide-down").forEach((section, i) => {
+            gsap.to(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top center",
+                },
+                delay: i * 0.5,
+                height: 'auto',
             });
         });
     </script>

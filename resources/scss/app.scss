@@ -110,3 +110,58 @@
     height: 28px;
     width: 28px;
   }
+
+  .center-h{
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+  }
+
+  .rotate-y{
+    transform: rotateY(180deg);
+  }
+
+
+  .text-gray{
+    color: #7c7c7c;
+  }
+
+  footer {
+    background: #0e0e0e;
+    color: #fff;
+
+    h4{
+      color: #fff !important;
+    }
+    .footer-bg {
+        background-position: center center;
+        background-size: cover;
+
+        .footer-inner {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        
+    }
+}
+.service-card{
+  .service-icon, .service-image{
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+
+
+  &:hover{
+    .service-image{
+      transform: scale(1.1);
+    }
+
+    .service-icon{
+      transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transform: scale(0.8);
+    }
+   
+  }
+
+}

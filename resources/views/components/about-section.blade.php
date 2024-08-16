@@ -6,8 +6,8 @@
 @endphp
 
 <div class="animation-container">
-    <div class="max-w-7xl m-auto">
-        <div class="flex pt-[200px]">
+    <div class="container-x m-auto">
+        <div class="flex pt-[100px]">
             <div class="w-2/3 ">
                 <h1 class="text-6xl font-bold uppercase anim">Precision. Resilience. <br><span
                         class="gradient-text">Security</span></h1>
@@ -30,15 +30,15 @@
                 </div>
 
                 <div class="anim9 ">
-                    <x-primary-button class=" px-6 py-4 ">
+                    {{-- <x-primary-button class=" px-6 py-4 ">
                         Get a Quote
-                    </x-primary-button>
+                    </x-primary-button> --}}
 
                 </div>
             </div>
             <div class="w-1/3">
                <div class="anim-h h-0 overflow-hidden">
-                <img lazy src="{{ asset('images/img1.jpeg') }}" alt="">
+                <img lazy src="{{ asset('images/img2.png') }}" alt="">
                </div>
             </div>
         </div>
