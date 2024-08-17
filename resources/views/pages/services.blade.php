@@ -31,34 +31,17 @@
     <section class="my-[100px]">
         <div class="container-x">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-                <x-service-card title="Surveillance - [CCTV]"
-                    description="At Samm Cooper Security Services our Hybrid Closed Circuit Television (CCTV) Systems are designed specially for each application to target unique requirements."
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="cctv-camera.svg">
-                </x-service-card>
-                <x-service-card title="Access Control Systems"
-                    description="Bollards An access control system protects your hard-earned investment by protecting your business from theft and dangerous intruders. "
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="door.svg">
-                </x-service-card>
-                <x-service-card title="Perimeter Security Systems"
-                    description="Samm Cooper Security Services perimeter security system ensures safeguarding of the approach ways to an industrial facility or a privately owned parcel of land and is the first line of defense for an object."
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="underground.svg">
-                </x-service-card>
+                @foreach ($services as $service)
+                    <x-service-card title="{{ $service['title'] }}" description="{{ $service['description'] }}"
+                        imageUrl="{{ $service['images'][0]['url'] }}" slug="{{ $service['slug'] }}"
+                        icon="{{ $service['icon'] }}">
+                    </x-service-card>
+                @endforeach
+
+
             </div>
 
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-                <x-service-card title="Fire Fighting System & Equipments"
-                    description="Samm Cooper Security Services supplies effective fire fighting systems for buildings of all sizes and types. We will customize all fire fighting systems so that they provide your property with the highest level of fire protection."
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="fire-extinguisher.svg">
-                </x-service-card>
-                <x-service-card title="EmergencyResponse |CallCenterSolutions"
-                    description="At Samm Cooper Security Services, we pioneer innovative ideas that are crucial to the government as well as for the develop- ment of the standard of living of the general public."
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="call-center.svg">
-                </x-service-card>
-                <x-service-card title="SCS Guards"
-                    description="Samm Cooper Security Services provides armed/unarmed guards. Ideally suited for deployment at strategic and sensitive locations, they are trained and equipped to perform key security functions."
-                    imageUrl="{{ asset('images/img4.jpg') }}" link="/" icon="bodyguard.svg">
-                </x-service-card>
-            </div>
+
         </div>
     </section>
 
@@ -147,10 +130,9 @@
                 </ul>
                 <ul class="list-none space-y-2">
                     <li class="flex items-center text-sm">
-                        <div
-                            class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <div class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check" viewBox="0 0 16 16">
                                 <path
                                     d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
                             </svg>
@@ -158,10 +140,9 @@
                         Financial Institutions
                     </li>
                     <li class="flex items-center text-sm">
-                        <div
-                            class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <div class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check" viewBox="0 0 16 16">
                                 <path
                                     d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
                             </svg>
@@ -169,10 +150,9 @@
                         Warehouses | Storage Facilities
                     </li>
                     <li class="flex items-center text-sm">
-                        <div
-                            class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <div class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check" viewBox="0 0 16 16">
                                 <path
                                     d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
                             </svg>

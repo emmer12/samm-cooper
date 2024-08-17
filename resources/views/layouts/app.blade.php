@@ -68,13 +68,11 @@
         });
 
 
-
-
         gsap.utils.toArray(".image-slide-down").forEach((section, i) => {
             gsap.to(section, {
                 scrollTrigger: {
                     trigger: section,
-                    start: "top center",
+                    start: "top bottom",
                 },
                 delay: i * 0.5,
                 height: 'auto',
