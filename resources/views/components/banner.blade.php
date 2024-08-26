@@ -1,10 +1,14 @@
 @props(['title' => $title, 'page' => $page, 'middleLink', 'middleText'])
-<div class="banner flex items-center text-center mt-[70px]  h-[340px]">
+<div class="banner flex items-center text-center mt-[70px]  h-[340px] overflow-x-hidden">
     <div class="container-x">
         {{-- <h4 class="text-sm sm:text-base font-semibold tracking-tight whitespace-nowrap text-primary uppercase">
             {{ $subtitle }} </h4> --}}
+
+
         <h1 class="inline-block text-3xl sm:text-5xl font-bold tracking-tighter  whitespace-nowrap mb-3">
             {!! $title !!} </h1>
+
+
 
 
 

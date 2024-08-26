@@ -6,8 +6,8 @@
 
 
     <div>
-        <x-banner title="{{ $service['title'] }}" page="{{ $service['title'] }}" middleText="Services"
-            middleLink="{{ route('services') }}"></x-banner>
+        <x-banner title="{{ isset($service['short']) ? $service['short'] : $service['title'] }}"
+            page="{{ $service['title'] }}" middleText="Services" middleLink="{{ route('services') }}"></x-banner>
     </div>
 
     <section class="bg-[#fafaff] py-[50px] sm:py-[100px]">

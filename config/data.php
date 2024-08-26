@@ -71,6 +71,7 @@ Standalone Digital Video Recording Server',],
         [
             'id' => 4,
             'title' => 'Fire Fighting System & Equipments',
+            'short' => 'Fire Fighting System',
             'slug' => 'fire-fighting-system',
             'lead' => 'Samm Cooper Security Services supplies effective fire fighting systems for buildings of all sizes and types. We will customize all fire fighting systems so that they provide your property with the highest level of fire protection. Samm Cooper Security Services will survey your property and work with you to ensure that our building fire fighting systems meet your requirements.',
             'description' => "
