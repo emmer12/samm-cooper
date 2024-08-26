@@ -30,7 +30,7 @@
     {{-- <x-about-section></x-about-section> --}}
 
 
-    <section class="my-[100px]">
+    <section class="my-[50px] sm:my-[100px]">
         <div class="container-x">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                 @foreach ($services as $service)
@@ -205,7 +205,7 @@
             <section>
                 <div class="container-x">
 
-                    <div class="grid grid-cols-2  my-[100px]">
+                    <div class="grid grid-cols-2  my-[50px] sm:my-[100px]">
                         <div class="px-4 slideIn">
                             <img src={{ asset('/images/img3.JPG') }} alt="Manned Guarding Image">
                         </div>
@@ -222,7 +222,7 @@
         <section>
             <div class="container-x">
 
-                <div class="grid grid-cols-2  my-[100px]">
+                <div class="grid grid-cols-2  my-[50px] sm:my-[100px]">
 
                     <div class="p-5 slideIn">
                         <h2 class="text-2xl font-bold">Monitoring and Security</h2>
@@ -245,7 +245,7 @@
         <section>
             <div class="container-x">
 
-                <div class="grid grid-cols-2  my-[100px]">
+                <div class="grid grid-cols-2  my-[50px] sm:my-[100px]">
                     <div class="px-4 slideIn">
                         <img src={{ asset('/images/img3.JPG') }} alt="Manned Guarding Image">
                     </div>
@@ -260,7 +260,7 @@
 
         <section>
             <div class="container-x">
-                <div class="grid grid-cols-2  my-[100px]">
+                <div class="grid grid-cols-2  my-[50px] sm:my-[100px]">
 
                     <div class="p-5 slideIn">
                         <h2 class="text-2xl font-bold">Executive protetion excor</h2>
@@ -282,7 +282,7 @@
         <section>
             <div class="container-x">
 
-                <div class="grid grid-cols-2 slideIn my-[100px]">
+                <div class="grid grid-cols-2 slideIn my-[50px] sm:my-[100px]">
                     <div class="px-4 slideIn">
                         <img src={{ asset('/images/img3.JPG') }} alt="Manned Guarding Image">
                     </div>

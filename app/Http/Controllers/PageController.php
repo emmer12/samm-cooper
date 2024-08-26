@@ -19,7 +19,9 @@ class PageController extends Controller
     }
     public function contact()
     {
-        return view('pages/contact');
+        $services = config("data.services");
+
+        return view('pages/contact', ['services' => $services]);
     }
     public function services()
     {
@@ -35,44 +37,17 @@ class PageController extends Controller
         return view('pages/services/show', ['service' => $service]);
     }
 
-    public function scs()
-    {
-        return view('pages/services');
-    }
-
-    public function emergency()
-    {
-        return view('pages/services');
-    }
-
-    public function fighting()
-    {
-        return view('pages/services');
-    }
-
-
-    public function security()
-    {
-        return view('pages/services');
-    }
-
-    public function control()
-    {
-        return view('pages/services');
-    }
-
-    public function guards()
-    {
-        return view('pages/services');
-    }
-
     public function contactUs(Request $request)
     {
+
+        $services = config("data.services");
 
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
             'message' => 'required|string',
+            'phone' => 'required|string',
+            'service' => 'string',
         ]);
 
 
@@ -86,9 +61,13 @@ class PageController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'message' => $request->message,
+            'service' => $request->service,
+            'phone' => $request->phone,
         ];
 
         $user->notify(new ContactUs($data));
+
+
 
         Session::flash('alert-class', 'alert-success');
         Session::flash('message', 'Message received, Thank you!!');

@@ -40,8 +40,10 @@ class ContactUs extends Notification
         return (new MailMessage)
             ->subject('Contact us notification')
             ->line("Name: " . $this->data['name'])
+            ->line("Phone Number: " . $this->data['phone'])
             ->line("Email: " . $this->data['email'])
             ->line("Message: " . $this->data['message'])
+            ->line("Service: " . $this->data['service'])
             ->line('Thank you for using our application!');
     }
 

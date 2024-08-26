@@ -10,7 +10,7 @@
             middleLink="{{ route('services') }}"></x-banner>
     </div>
 
-    <section class="bg-[#fafaff] py-[100px]">
+    <section class="bg-[#fafaff] py-[50px] sm:py-[100px]">
         <div class="container-x">
             {{-- <div class="mb-[50px]">
                 <div class="">
@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <section class="my-[100px]">
+    <section class="my-[50px] sm:my-[100px]">
         <div class="container-x">
             <div class=" max-w-[900px] m-auto">
                 {{-- <header>

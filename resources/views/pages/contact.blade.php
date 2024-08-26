@@ -8,7 +8,7 @@
         <x-banner title="Contact us" page="Contact"></x-banner>
     </div>
 
-    <section class="bg-[#fafaff] py-[100px]">
+    <section class="bg-[#fafaff] py-[50px] sm:p-[100px]">
         <div class="container-x">
             <div class="mb-[50px]">
                 <div class="">
@@ -18,8 +18,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-wrap gap-4 m-auto justify-center" data-aos="fade-up">
-                <div class="">
+            <div class="flex flex-wrap gap-4 m-auto sm:justify-center justify-start" data-aos="fade-up">
+                <div class="flex-1">
                     <div class="bg-white p-4 box-mb ">
                         <div class="box-image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="flex-1">
                     <div class="bg-white p-4 box-mb">
                         <div class="box-image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="flex-1">
                     <div class="bg-white p-4 box-mb">
                         <div class="box-image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="py-[50px] sm:p-[100px]">
         <div class="container-x">
             <header class="m-auto text-center mb-5">
                 <h2 class="text-[36px] font-bold">Get in touch</h2>
@@ -97,22 +97,32 @@
                     @endif
 
                     @if ($errors->any())
-                        <div class="bg-red-200 alert-danger">
+                        <div class="bg-red-200 p-2 alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
                                 @endforeach
                             </ul>
                         </div>
+                        <br>
                     @endif
+
 
                     <div class="grid gap-6 mb-6 md:grid-cols-1">
                         <div>
                             <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Full
                                 name</label>
                             <input type="text" id="name" name="name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
-                                placeholder="John" required />
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                placeholder="John Doe" required />
+                        </div>
+
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">
+                                Phone number</label>
+                            <input type="text" id="name" name="phone"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                placeholder="e.g 09068647444" required />
                         </div>
 
                         <div>
@@ -120,15 +130,28 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 ">Email
                                 Address</label>
                             <input type="email" id="email" name="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                                 placeholder="john.doe@company.com" required />
                         </div>
+
+
+                        <select id="service" name="service"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+
+                            @foreach ($services as $service)
+                                <option selected>Choose Service</option>
+                                <option>{{ $service['title'] }}</option>
+                            @endforeach
+                        </select>
+
+
                         <div>
-                            <label for="contwnt" class="block mb-2 text-sm font-medium text-gray-900 ">
-                                Company</label>
-                            <input name="message" type="text" id="content"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
-                                placeholder="Flowbite" required />
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">
+                                Message</label>
+
+                            <textarea name="message" id="message" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+                                placeholder="Write your thoughts here..."></textarea>
                         </div>
 
 

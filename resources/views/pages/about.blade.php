@@ -60,7 +60,7 @@
 
 
     {{-- 
-    <section class="sm:py-[100px] py-[50px] fadeIn">
+    <section class="sm:py-[50px] sm:p-[100px] py-[50px] fadeIn">
         <div class="container-x">
             <div class="flex flex-col-reverse sm:flex-row gap-x-[60px] gap-y-5 items-center ">
                 <div class="w-full sm:w-1/2 ">
@@ -82,7 +82,7 @@
     </section> --}}
 
 
-    <section class="sm:py-[100px] py-[50px] fadeIn bg-[#fafaff]">
+    <section class="sm:py-[50px] sm:p-[100px] py-[50px] fadeIn bg-[#fafaff]">
         <div class="container-x">
             <div class="sm:w-[720px] m-auto text-center">
                 <h4 class="text-sm sm:text-base font-semibold tracking-tight  text-primary uppercase mb-2">
@@ -111,7 +111,7 @@
     </section>
 
 
-    <section class="py-[100px]">
+    <section class="py-[50px] sm:p-[100px]">
         <div class="container-x">
             <header>
                 <h2 class="text-sm sm:text-base font-semibold tracking-tight  text-primary uppercase mb-2">Our Strategic
