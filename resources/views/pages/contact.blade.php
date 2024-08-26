@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex gap-4 m-auto justify-center" data-aos="fade-up">
+            <div class="flex flex-wrap gap-4 m-auto justify-center" data-aos="fade-up">
                 <div class="">
                     <div class="bg-white p-4 box-mb ">
                         <div class="box-image">
@@ -87,31 +87,49 @@
 
 
             <div class="max-w-[640px] m-auto">
-                <form>
-                    <div class="grid gap-6 mb-6 md:grid-cols-1">
+                <form method="POST" action="{{ route('contact-us') }}">
+                    @csrf
 
+
+                    @if (Session::has('message'))
+                        <p class="bg-green-100 p-3 {{ Session::get('alert-class', 'alert-info') }}">
+                            {{ Session::get('message') }}</p>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="bg-red-200 alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <div class="grid gap-6 mb-6 md:grid-cols-1">
                         <div>
-                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">First
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Full
                                 name</label>
-                            <input type="text" id="first_name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            <input type="text" id="name" name="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
                                 placeholder="John" required />
                         </div>
 
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
-                            <input type="email" id="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            <label name="email" for="email"
+                                class="block mb-2 text-sm font-medium text-gray-900 ">Email
+                                Address</label>
+                            <input type="email" id="email" name="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
                                 placeholder="john.doe@company.com" required />
                         </div>
                         <div>
-                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">
+                            <label for="contwnt" class="block mb-2 text-sm font-medium text-gray-900 ">
                                 Company</label>
-                            <input type="text" id="company"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            <input name="message" type="text" id="content"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 "
                                 placeholder="Flowbite" required />
                         </div>
-
 
 
                         <x-primary-button>Submit</x-primary-button>

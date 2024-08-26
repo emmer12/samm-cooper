@@ -14,8 +14,10 @@
             <div class="max-w-[600px] px-6 py-[50px] m-auto text-center text-xl ">
                 <p class="fadeIn">Samm Cooper Security Services system expertise and field experience enables us to apply
                     our
-                    Defense/IT/Security Solutions into virtually any environment - from small businesses to large
-                    enterprises.</p>
+                    <span class="gradient-text">Defense/IT/Security Solutions</span> into virtually any environment -
+                    from small businesses to large
+                    enterprises.
+                </p>
                 <p class="fadeIn">By viewing and assessing our clients' requirements carefully, we design, install and
                     maintain cost
                     effect
@@ -32,7 +34,7 @@
         <div class="container-x">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3">
                 @foreach ($services as $service)
-                    <x-service-card title="{{ $service['title'] }}" description="{{ $service['description'] }}"
+                    <x-service-card title="{{ $service['title'] }}" lead="{{ $service['lead'] }}"
                         imageUrl="{{ $service['images'][0]['url'] }}" slug="{{ $service['slug'] }}"
                         icon="{{ $service['icon'] }}">
                     </x-service-card>
@@ -55,8 +57,8 @@
                     Application Environment</h4>
                 <h2 class="text-3xl sm:text-5xl  font-bold">Secure, integrated, threat-defense setup.</h2>
             </header>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ul class="list-none space-y-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 application">
+                <ul class="list-none space-y-2 ">
                     <li class="flex items-center text-sm">
                         <div class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -297,5 +299,42 @@
 
 
  --}}
+
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+
+
+        // gsap.from(".header", {
+        //     scrollTrigger: {
+        //         trigger: ".header",
+        //     },
+        //     autoAlpha: 0,
+        // });
+
+        ScrollTrigger.batch(".card-animation", {
+            onEnter: elements => {
+                gsap.from(elements, {
+                    autoAlpha: 0,
+                    y: 60,
+                    stagger: 0.15,
+                    delay: 0.5,
+                });
+            },
+            once: true,
+        });
+
+        ScrollTrigger.batch(".application li", {
+            onEnter: elements => {
+                gsap.from(elements, {
+                    autoAlpha: 0,
+                    x: 10,
+                    stagger: 0.15,
+                    delay: 0.5,
+                });
+            },
+            once: true,
+        });
+    </script>
 
 </x-app-layout>

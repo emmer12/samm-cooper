@@ -122,35 +122,35 @@
 
 
         <div class=" mt-[50px] w-full overflow-x-hidden">
-            <div class="mq flex p-2 w-[300%]" id="mq">
+            <div class="mq flex p-2 w-[1000%] sm:w-[300%]" id="mq">
                 <div id="mq-content" class=" flex w-full items-center">
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b0.webp') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b1.webp') }} alt="panasonic">
                     </div>
 
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b2.jpg') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b3.png') }} alt="panasonic">
                     </div>
 
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b4.png') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b5.png') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b6.png') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b7.png') }} alt="panasonic">
                     </div>
-                    <div class=" max-w-[300px] px-5">
+                    <div class=" min-w-[200px] max-w-[300px] px-5">
                         <img src={{ asset('images/brands/b8.png') }} alt="panasonic">
                     </div>
                 </div>

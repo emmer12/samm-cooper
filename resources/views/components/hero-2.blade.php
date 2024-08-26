@@ -8,7 +8,7 @@
 <div class="h-screen hero-2-bg">
     <div class="max-w-7xl m-auto">
         <div class="flex pt-[200px]">
-            <div class="w-1/2 m-auto">
+            <div class="logo-contain w-full sm:w-1/2 m-auto " id="added">
                 <img class="w-full h-full" src="{{ asset('images/logo.jpg') }}" alt="">
             </div>
         </div>
@@ -16,22 +16,25 @@
 </div>
 
 
-<div class="flex gap-6 my-8 fixed bottom-0 left-[50%] translate-x-[-50%] ">
-    <div class="flex-col gap-4 text-center ">
-        <p class="anim4  uppercase text-slate-600 font-normal text-sm tracking-wider">Defence </p>
+
+<div class="flex items-center gap-6 my-8 fixed bottom-0 left-[50%] translate-x-[-50%]  ">
+    <div class="flex-col gap-4 text-center home-menu">
+        <a class="anim4  uppercase inline-block text-slate-600 font-normal text-sm tracking-wider">Defence </a>
     </div>
-    <div class="flex-col gap-4 text-center " ">
-        <p class="anim6  uppercase text-slate-600 font-normal text-sm tracking-wider" >Information Technology </p>
+
+    <div class="flex-col gap-4 text-center home-menu">
+        <a class="anim6  uppercase inline-block text-slate-600 font-normal text-sm tracking-wider">Information
+            Technology </a>
     </div>
-    <div class="flex-col gap-4  text-center ">
-        <p class="anim8  uppercase text-slate-600 font-normal text-sm tracking-wider">Security </p>
+    <div class="flex-col gap-4  text-center home-menu except">
+        <a class="anim8  uppercase inline-block text-slate-600 font-normal text-sm tracking-wider">Security </a>
     </div>
 </div>
 
 
 {{-- Social Link --}}
 <div>
-    <div class="flex flex-col fixed right-6 bottom-6 gap-3 social">
+    <div class="flex flex-col fixed right-6 sm:bottom-6 bottom-[100px] gap-3 social">
         <div class="before"></div>
         <a href="https://www.facebook.com/profile.php?id=100069651853930&amp;mibextid=LQQJ4d" class="items b">
             <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -39,8 +42,8 @@
                 <path d=" M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75
         7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993
         0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
-        </path>
-        </svg>
+                </path>
+            </svg>
         </a>
         <a href="https://www.instagram.com/scs_guards/" class="items in">
             <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -65,6 +68,8 @@
 
 
 <script>
+    const con = document.getElementById('added');
+
     gsap.registerPlugin(MotionPathPlugin)
     const animations = [{
             selector: ".anim4",
@@ -78,7 +83,8 @@
 
         {
             selector: ".anim8",
-            y: 20
+            y: 20,
+
         },
 
     ];
@@ -96,7 +102,12 @@
 
     tl.from(".social .before", {
         opacity: 0,
-        height: '0px'
+        height: '0px',
+        onComplete: function() {
+            con.classList.add('added');
+            // $(this).addClass(
+            // 'mainAnimatedClass'); 
+        }
     })
 
     tl.to("#svg", {

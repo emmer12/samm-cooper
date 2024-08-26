@@ -29,18 +29,20 @@
     <section class="my-[100px]">
         <div class="container-x">
             <div class=" max-w-[900px] m-auto">
-                <header>
+                {{-- <header>
                     <h2 class="gradient-text text-xl font-bold">CCD Cameras
                         Dome Cameras
                         Pinhole | Hidden Cameras Infra-red Cameras IP-Based Cameras Wireless Cameras
                         Speed Cameras</h2>
                 </header>
-                <br>
-                <div class="grid grid-cols-3 highslide-gallery gap-4">
+                <br> --}}
+                <div class="grid grid-cols-2 highslide-gallery gap-4">
                     @foreach ($service['images'] as $item)
-                        <div>
-                            <a href="{{ $item['url'] }}" class="highslide" onclick="return hs.expand(this)">
-                                <img src="{{ $item['url'] }}" alt="Highslide JS" title="Click to enlarge" />
+                        <div class="w-full h-[300px ] border card-animation">
+                            <a class="h-full" href="{{ $item['url'] }}" class="highslide"
+                                onclick="return hs.expand(this)">
+                                <img class="w-full h-full object-contain" src="{{ $item['url'] }}" alt="Highslide JS"
+                                    title="Click to enlarge" />
                             </a>
 
 
@@ -99,6 +101,21 @@
                 position: 'bottom center',
                 hideOnMouseOut: true
             }
+        });
+
+        gsap.registerPlugin(ScrollTrigger)
+
+
+        ScrollTrigger.batch(".card-animation", {
+            onEnter: elements => {
+                gsap.from(elements, {
+                    autoAlpha: 0,
+                    y: 60,
+                    stagger: 0.15,
+                    delay: 0.5,
+                });
+            },
+            once: true,
         });
     </script>
 

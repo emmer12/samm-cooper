@@ -1,7 +1,7 @@
-@props(['title', 'imageUrl', 'description', 'slug', 'icon'])
+@props(['title', 'imageUrl', 'lead', 'slug', 'icon'])
 
 
-<div class="bg-[#F7F9FC] service-card">
+<div class="bg-[#F7F9FC] service-card card-animation">
     <div class="display w-full bg-red-100 relative  ">
         <div class="overflow-hidden">
             <a href="{{ route('service-details', ['slug' => $slug]) }}">
@@ -15,7 +15,7 @@
     </div>
     <div class="text-center mt-[50px] py-10 px-4">
         <h4 class="text-xl font-bold">{!! $title !!}</h4>
-        <p class="text-base text-[#7c7c7c] line-clamp">{!! $description !!}</p>
+        <p class="text-base text-[#7c7c7c] line-clamp">{!! $lead !!}</p>
 
         <a class="gradient-text flex justify-center items-center gap-2"
             href="{{ route('service-details', ['slug' => $slug]) }}">Learn More
