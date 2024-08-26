@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="py-[50px] sm:p-[100px]">
+    <section class="py-[70px] sm:p-[100px]" id='contact'>
         <div class="container-x">
             <header class="m-auto text-center mb-5">
                 <h2 class="text-[36px] font-bold">Get in touch</h2>

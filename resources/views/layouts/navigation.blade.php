@@ -44,9 +44,11 @@
 
 
                 <div class="flex gap-2">
-                    <x-primary-button class="ms-3">
-                        Get a Quote
-                    </x-primary-button>
+                    <a href="/contact/#contact">
+                        <x-primary-button class="ms-3">
+                            Get a Quote
+                        </x-primary-button>
+                    </a>
 
                     <!-- Hamburger -->
                     <div class="-me-2 flex items-center sm:hidden">
