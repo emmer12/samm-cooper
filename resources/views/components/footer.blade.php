@@ -35,7 +35,7 @@
                                         Asokoro District, Abuja F.C.T.
                                     </p>
                                     <div class="flex items-start">
-                                        <p class="text-[#a3a3a3] my-0">Call Us:</p>
+                                        <p class="text-[#a3a3a3] my-0 text-2xl mr-2">☎</p>
                                         <ul class="ml-2">
                                             <li class="mb-2">
                                                 <strong>
@@ -55,7 +55,8 @@
                                         </ul>
                                     </div>
 
-                                    <a class="text-[#a3a3a3]" href="info@sammcooperng.com">info@sammcooperng.com
+                                    <a class="text-[#a3a3a3]" href="info@sammcooperng.com"><span
+                                            class="text-2xl mr-2">📨</span> info@sammcooperng.com
                                     </a>
                                     </p>
                                 </div>
@@ -66,7 +67,7 @@
                     <div class="">
                         <div class="widget widget_mc4wp_form_widget">
                             <div class="widget-content">
-                                <h4 class="text-sm font-semibold">Important Links</h4>
+                                <h4 class="text-sm font-semibold">Navigate</h4>
 
                                 <ul class="my-4 font-normal list-animation">
                                     <li class="my-1">

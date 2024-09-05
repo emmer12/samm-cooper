@@ -27,7 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-    'email' => env('APP_EMAIL', 'taiwoemmauel0011@gmail.com'),
+    'email' => env('APP_EMAIL', 'taiwoemmanuel0011@gmail.com'),
 
     /*
 

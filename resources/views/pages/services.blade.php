@@ -62,7 +62,7 @@
                     <ul class="list-none space-y-2 ">
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -73,7 +73,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -84,7 +84,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -95,7 +95,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -106,7 +106,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -117,7 +117,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -128,7 +128,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -141,7 +141,7 @@
                     <ul class="list-none space-y-2">
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -152,7 +152,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -163,7 +163,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -174,7 +174,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -185,7 +185,7 @@
                         </li>
                         <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path
@@ -194,9 +194,9 @@
                             </div>
                             Small | Medium Scale Businesses
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center text-sm">
                             <div
-                                class="w-6 h-6 flex items-center justify-center rounded-full bg-red-200 text-red-800 mr-3">
+                                class="w-6 h-6 flex items-center justify-center rounded-full flex-shrink-0 bg-red-200 text-red-800 mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path

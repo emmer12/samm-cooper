@@ -21,7 +21,7 @@
             <div class="flex flex-wrap gap-4 m-auto sm:justify-center justify-start" data-aos="fade-up">
                 <div class="flex-1">
                     <div class="bg-white p-4 box-mb ">
-                        <div class="box-image">
+                        <div class="box-image flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                 <path
@@ -37,7 +37,7 @@
                 </div>
                 <div class="flex-1">
                     <div class="bg-white p-4 box-mb">
-                        <div class="box-image">
+                        <div class="box-image flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -57,7 +57,7 @@
                 </div>
                 <div class="flex-1">
                     <div class="bg-white p-4 box-mb">
-                        <div class="box-image">
+                        <div class="box-image flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                                 <path

@@ -48,7 +48,7 @@
                 </div>
                 <div class=" display w-full flex-1 overflow-clip ">
                     <div class="image-slide-down h-0 overflow-hidden origin-top">
-                        <img lazy src="{{ asset('images/img1.jpeg') }}" />
+                        <img lazy src="{{ asset('images/img2.png') }}" />
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
             <div class="sm:w-[720px] m-auto text-center">
                 <h4 class="text-sm sm:text-base font-semibold tracking-tight  text-primary uppercase mb-2">
                     The Future</h4>
-                <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-3 gradient-text">A message fro our
+                <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-3 gradient-text">A message from our
                     director
                 </h2>
 

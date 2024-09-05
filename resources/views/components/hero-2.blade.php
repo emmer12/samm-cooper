@@ -35,7 +35,7 @@
 {{-- Social Link --}}
 <div>
     <div class="flex flex-col fixed right-6 sm:bottom-6 bottom-[100px] gap-3 social">
-        <div class="before"></div>
+        <div class="before hidden sm:flex"></div>
         <a href="https://www.facebook.com/profile.php?id=100069651853930&amp;mibextid=LQQJ4d" class="items b">
             <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-facebook" viewBox="0 0 16 16">

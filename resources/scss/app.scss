@@ -131,6 +131,18 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+
+    @media (max-width:420px) {
+      height: 50px;
+      width: 50px;
+
+
+      svg{
+        height: 20px !important;
+        width: 20px !important;
+      }
+    }
   }
 
   .box-image svg{
